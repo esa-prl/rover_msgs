@@ -21,7 +21,8 @@ set(msg_files
   "msg/JointCommandArray.msg")
 
 set(srv_files
-  "srv/Activate.srv"
+  "srv/Enable.srv"
+  "srv/Disable.srv"
   "srv/ChangeLocomotionMode.srv")
 
 rosidl_generate_interfaces(${PROJECT_NAME}

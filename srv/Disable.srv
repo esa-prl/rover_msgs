@@ -1,4 +1,3 @@
-string new_locomotion_mode
 ---
 bool success
 string message
