@@ -12,13 +12,17 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/JointCommand.msg"
-  "msg/JointCommandArray.msg")
+  "msg/JointCommandArray.msg"
+  "msg/TemperatureArray.msg"
+  "msg/WrenchStampedArray.msg")
 
 set(srv_files
   "srv/ChangeLocomotionMode.srv")
@@ -26,6 +30,6 @@ set(srv_files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
-  DEPENDENCIES std_msgs builtin_interfaces)
+  DEPENDENCIES geometry_msgs sensor_msgs std_msgs builtin_interfaces)
 
 ament_package()
