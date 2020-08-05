@@ -8,13 +8,13 @@ This package contains custom message definitions used for the rover platforms of
 
 ### License
 
-The source code is released under a [TODO: Add License]().
+The source code is released under a [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 **Author: Miro Voellmy<br />
 Affiliation: [European Space Agency](https://www.esa.int/)<br />
 Maintainer: Miro Voellmy, miro.voellmy@esa.int**
 
-The Rover Msgs package has been tested under [ROS2] Eloquent and Ubuntu 18.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
+The Rover Msgs package has been tested under [ROS2] Foxy Fitzroy and Ubuntu 20.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
 
 ### Building from Source
